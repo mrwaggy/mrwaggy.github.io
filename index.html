@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<!--https://www.youtube.com/watch?v=oYRda7UtuhA-->
+<!--https://www.youtube.com/watch?v=oYRda7UtuhA progress: 49 min-->
 
 <html>
     <head>
@@ -11,14 +11,14 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     </head>
     
     <body>
         
         <section class="header">
             <nav>
-                <a href="index.html"><img src="Images/logo.png"></a>
+                <a href="index.html"><img id="mhs-logo" src="Images/logo.png"></a>
                 <div class="nav-links" id="navLinks">
                     <i class="fa fa-times" onclick="hideMenu()"></i>
                     <ul>
@@ -32,34 +32,61 @@
 
             <div class ="text-box">
                 <h1>Makerspace</h1>
-                <p>A space to unlock student potential by providing tools to create and make innovations.</p>
-                <a href="" class="hero-btn">Explore</a>
-                <a href="" class="hero-btn">Request a time</a>
+                <p>A space to unlock student potential by providing tools to create and make innovations.<br/>A website built by students, for students.</p>
+                <a href="" class="hero-btn">Request a Time</a>
+                <a href="" class="hero-btn">Blog</a>
             </div>
 
         </section>
 
         <!-----course----->
         <section class = "course">
-            <h1> Courses We Offer </h1>
-            <p> hbjbvgjvgjvxhjghfdgtehrthjnrs </p>
+            <h1>Available Tools</h1>
+            <p></p>
 
             <div class="row">
                 <div class = "course-col">
-                    <h3> Intermediate </h3>
-                    <p> asgfdsgehgdafsgfsaagfs </p>
+                    <h3>3-D printer</h3>
+                    <p>Bring your creations to life using plastic filament.</p>
                 </div>
                 <div class = "course-col">
-                    <h3> Degree </h3>
-                    <p> asgfdsgehgdafsgfsaagfs </p>
+                    <h3>Sewing Machine</h3>
+                    <p>Ripped your jeans? Fix your clothing here!</p>
                 </div>
                 <div class = "course-col">
-                    <h3> Post Graduation </h3>
-                    <p> asgfdsgehgdafsgfsaagfs </p>
+                    <h3>Green Screen</h3>
+                    <p>It doesn't have to be green.</p>
                 </div>
             </div>
         </section>
 
+        <!--campus-->
+        <section class="campus">
+            <h1>Featured Creations</h1>
+            <p>If you send us someone you made in the Makerspace, it could get featured on this website!</p>
+
+            <div class="row">
+                <div class="campus-col">
+                    <img src="Images/hand.jpeg" alt="plastic glove">
+                    <div class="layer">
+                        <h3>3-D PRINTED GLOVE</h3>
+                    </div>
+                </div>
+                <div class="campus-col">
+                    <img src="Images/Soil Moisture Meter.jpg" alt="moisture meter">
+                    <div class="layer">
+                        <h3>ARDUINO SOIL MOISTURE METER</h3>
+                    </div>
+                </div>
+                <div class="campus-col">
+                    <img src="Images/Art with VR.png" alt="vr art">
+                    <div class="layer">
+                        <h3>VR ART</h3>
+                    </div>
+                </div>
+            </div>
+
+        </section>
     
         <!--Toggle menu script-->
         <script>
@@ -68,12 +95,12 @@
 
             function hideMenu()
             {
-                navLinks.style.right = "0";
+                navLinks.style.right = "-200px";
             }
 
             function showMenu()
             {
-                navLinks.style.right = "-200px"
+                navLinks.style.right = "0"
             }
 
         </script>
