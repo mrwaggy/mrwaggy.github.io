@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request a Time</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img id="mhs-logo" src="Images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="requestATime.html">REQUEST A TIME</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class ="text-box">
+            <h1>Request a Time</h1>
+            <p>A space to unlock student potential by providing tools to create and make innovations.<br/>A website built by students, for students.</p>
+            <a href="requestATime.html" class="hero-btn">Request a Time</a>
+            <a href="blog.html" class="hero-btn">Blog</a>
+        </div>
+
+        <div class="request-form">
+
+        </div>
+    </section>
+
+    <section class = "footer">
+        <h4>Interested in More Information?</h4>
+        <p>Feel free to swing by the library and ask for the key to check out the Makerspace or email; <br> <a href= "https://mail.google.com/mail/u/0/#inbox">eleonard@medford.k12.ma.us</a> </p>
+    
+        <div class = "icons">
+            <p>Made with <i class="fa fa-heart-o"></i> by Students</p>
+        </div>
+    </section>
+
+    <!--Toggle menu script-->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function hideMenu()
+        {
+            navLinks.style.right = "-200px";
+        }
+
+        function showMenu()
+        {
+            navLinks.style.right = "0"
+        }
+
+    </script>
+</body>
+</html>
